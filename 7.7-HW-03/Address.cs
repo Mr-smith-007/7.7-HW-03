@@ -39,6 +39,6 @@ namespace _7_7_HW_03
             state = sta;
             postalCode = postCode;
         }
-        internal string Show() => $"Адрес: {postalCode}, {state}, {city}, дом {building}, этаж {(String.IsNullOrWhiteSpace(floor) ? "нет" : floor)}, квартира {(String.IsNullOrWhiteSpace(appartment) ? "нет" : appartment)}";
+        internal string Show() => $" {postalCode}, {state}, {city}, дом {building}, этаж {(String.IsNullOrWhiteSpace(floor) ? "нет" : floor)}, квартира {(String.IsNullOrWhiteSpace(appartment) ? "нет" : appartment)}";
     }
 }

@@ -8,9 +8,9 @@ namespace _7_7_HW_03
 {
     abstract class Person
     {
-        string firstName;
-        string lastName;
-        int age;
+        protected string firstName;
+        protected string lastName;
+        protected int age;
         internal Person(int age, string fname, string lname)
         {
             this.age = age;

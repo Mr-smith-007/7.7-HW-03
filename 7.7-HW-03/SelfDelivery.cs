@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _7_7_HW_03
 {
-    class SelfDelivery
+    class SelfDelivery : Delivery
     {
         private string shopAddress = "Shop Address";
         internal override void Deliver()

@@ -29,7 +29,7 @@ namespace _7_7_HW_03
                     Console.WriteLine("Индекс введен некорректно");
             }
         }
-        internal Address(string apt = "1", string fl = "1", string bld = "1", string st = "Lenina", string ct = "City", string sta = "Moscow st", string postCode = "123456")
+        internal Address(string apt = "", string fl = "", string bld = "", string st = "", string ct ="" , string sta = "", string postCode = "")
         {
             appartment = apt;
             floor = fl;
@@ -39,6 +39,6 @@ namespace _7_7_HW_03
             state = sta;
             postalCode = postCode;
         }
-        internal string Show() => $" {postalCode}, {state}, {city}, дом {building}, этаж {(String.IsNullOrWhiteSpace(floor) ? "нет" : floor)}, квартира {(String.IsNullOrWhiteSpace(appartment) ? "нет" : appartment)}";
+        internal string Show() => $" {postalCode}, {state}, {city}, {street}, дом {building}, этаж {(String.IsNullOrWhiteSpace(floor) ? "нет" : floor)}, квартира {(String.IsNullOrWhiteSpace(appartment) ? "нет" : appartment)}";
     }
 }

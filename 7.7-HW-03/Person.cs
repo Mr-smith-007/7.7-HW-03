@@ -8,8 +8,8 @@ namespace _7_7_HW_03
 {
     abstract class Person
     {
-        protected string firstName;
-        protected string lastName;
+        internal string firstName;
+        internal string lastName;
         protected int age;
         internal Person(int age, string fname, string lname)
         {

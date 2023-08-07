@@ -14,8 +14,8 @@ namespace _7_7_HW_03
     class Client : Person
     {
         Level status;
-        Address address;
-        Contacts contacts;
+        internal Address address;
+        internal Contacts contacts;
         internal Client(int age, string name, string lname): base(age, name, lname)
         {
             address = new Address(apt:"47", fl:"3", bld:"6");

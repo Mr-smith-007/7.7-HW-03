@@ -8,12 +8,14 @@ namespace _7_7_HW_03
 {
     class Courier: Person
     {
-        Contacts contacts;
-        Address address;
+        Contacts clientContacts;
+        Address deliveryAddress;
+        
         internal Courier (int age, string name, string lname, Contacts cont, Address addr) : base(age, name, lname)
         {
-            contacts = cont;
-            address = addr;
+            clientContacts = cont;
+            deliveryAddress = addr;
+            
         }
     }
 }

@@ -8,8 +8,8 @@ namespace _7_7_HW_03
 {
     internal class Product
     {
-        string vendorCode;
-        string name;
+        internal string vendorCode;
+        internal string name;
         decimal price;
         public Product(string vc, string name = "product", decimal price = 0)
         {

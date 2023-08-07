@@ -10,14 +10,14 @@ namespace _7_7_HW_03
     {
         internal Product product;
         int quantity;
-        decimal price;
-        internal Item(Product product, int quantity = 1, decimal price = 0)
+        double price;
+        internal Item(Product product, int quantity = 1, double price = 0)
         {
             this.product = product;
             this.quantity = quantity;
             this.price = price;
         }
-        internal string Show() => "Артикул " + product.vendorCode + "\tНазвание" + "\tколличество: " + quantity.ToString() + "\tцена: " + price.ToString();
+        internal string Show() => "Артикул " + product.vendorCode + "\tНазвание: "+ product.name + "\tколличество: " + quantity.ToString() + "\tцена: " + price.ToString();
     }
 
 }

@@ -10,8 +10,8 @@ namespace _7_7_HW_03
     {
         internal string vendorCode;
         internal string name;
-        decimal price;
-        public Product(string vc, string name = "product", decimal price = 0)
+        internal double price;
+        public Product(string vc, string name = "product", double price = 0)
         {
             vendorCode = vc;
             this.name = name;

@@ -42,14 +42,16 @@ namespace _7_7_HW_03
                 foreach (Item X in this.items)
                 {
                     if (x == X.product.vendorCode)
-                        return X;
-                    else
                     {
-                        Console.WriteLine("Артикул продукта не найден в заказе");
-                        return null;
+                        return X;
                     }
+
                 }
-                
+                Console.WriteLine("Артикул продукта не найден в заказе");
+                return null;
+
+
+
             }
         }
 
@@ -58,7 +60,7 @@ namespace _7_7_HW_03
             Console.WriteLine($"Заказ: {orderId}");
             Console.WriteLine(client.Show());
             Console.WriteLine("Состав заказа:");
-            foreach(Item X in this.items)
+            foreach (Item X in items)
                 Console.WriteLine(X.Show());
         }
 

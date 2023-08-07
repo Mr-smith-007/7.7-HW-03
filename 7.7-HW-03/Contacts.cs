@@ -8,8 +8,8 @@ namespace _7_7_HW_03
 {
     class Contacts
     {
-        private string email;
-        private string telphone;
+        protected string email;
+        protected string telphone;
         internal string Telphone
         {
             get

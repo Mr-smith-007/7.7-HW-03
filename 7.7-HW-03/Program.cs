@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HW_03_7_7
+namespace _7._7_HW_03
 {
 class Programm
 {
